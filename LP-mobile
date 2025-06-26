@@ -1,0 +1,484 @@
+<!-- 1 BLOCK -->
+
+<!-- Load Montserrat -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- Lottie library -->
+<div style="font-family: 'Montserrat', sans-serif; padding: 0; color: white; max-width: 700px; margin: auto; border-radius: 6px; overflow: hidden; position: relative;">
+    <!-- Lottie + Agent -->
+    <div style="position: relative; width: 100%; display: flex; justify-content: center; align-items: flex-end; margin-top: 20px; height: 330px;">
+        <!-- Lottie -->
+        <div style="position: relative; z-index: 1;">
+            <lottie-player src="https://www.ee-experten.com/media/sanierungsfahrplan_19_.json" background="transparent" speed="1" loop="" autoplay="" style="height: 330px; width: auto;"></lottie-player>
+        </div>
+        <!-- Agent -->
+        <div style="position: absolute; right: 5%; bottom: -120px; z-index: 2;">
+            <img src="https://www.ee-experten.com/media/bannerright-1440/t7a8932titel.png" alt="Energieberater" style="height: 330px; width: auto;">
+        </div>
+    </div>
+    <!-- Content with translucent white box -->
+    <div style="margin-top: 130px; margin-bottom: 20px;">
+        <div style="width: 90%; margin: auto;">
+            <div style="background: rgba(255, 255, 255, 0.1); border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
+                <p style="font-size: 14px; font-weight: bold; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 6px; color: #223a66;">
+                    Förderzulassung – <span style="font-weight: bold;">Wer sie braucht</span> und warum
+                </p>
+                <div style="height: 4px; width: 75px; background-color: #5d792b; margin-bottom: 14px; margin-left: 25px;">
+                </div>
+                <!-- Inserted Image (within span, limited width, shadow, border-radius) -->
+                <div style="text-align: left; margin-left: 26px; margin-bottom: 18px;">
+                    <span style="display: inline-block; width: 88%; max-width: 620px;"><img src="https://i.imgur.com/l7WYxKt.png" alt="Förderzulassung Bild" style="width: 100%; height: auto; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: block;"></span>
+                </div>
+                <p style="font-size: 14px; margin-bottom: 20px; font-family: 'Montserrat', sans-serif; color: #323030cd;">
+                    Die Förderzulassung ist für Eigentümer von Wohn-, Gewerbe- oder Mischgebäuden gedacht, die eine energetische Sanierung planen. Sie prüft die Förderfähigkeit des Gebäudes und unterstützt bei der Antragsvorbereitung.
+                </p>
+                <p style="font-size: 12px; font-weight: bold; color: #323030cd; margin: 0 0 10px 0; font-family: 'Montserrat', sans-serif;">
+                    ✓ Förderfähigkeit geprüft
+                </p>
+                <p style="font-size: 12px; font-weight: bold; color: #323030cd; margin: 0 0 10px 0; font-family: 'Montserrat', sans-serif;">
+                    ✓ Vorstufe zum Förderantrag
+                </p>
+                <p style="font-size: 12px; font-weight: bold; color: #323030cd; margin: 0 0 10px 0; font-family: 'Montserrat', sans-serif;">
+                    ✓ Basierend auf GEG, BEG, DIN 18599
+                </p>
+                <p style="font-size: 12px; font-weight: bold; color: #323030cd; margin: 0; font-family: 'Montserrat', sans-serif;">
+                    ✓ Nutzbar für weitere Beratung
+                </p>
+                <!-- Button -->
+                <div onclick="document.getElementById('form-block').scrollIntoView({ behavior: 'smooth', block: 'center' });" class="form-button" style="margin-top: 20px; width: 260px; margin-left: 10px; background-color: #5d792b; color: white; border-radius: 4px; padding: 12px 0; text-align: center; font-family: 'Montserrat', sans-serif; font-weight: 500; font-size: 16px; cursor: pointer; transition: transform 0.2s;">
+                    Förderfähigkeit prüfen
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- 2 BLOCK -->
+
+<div style="font-family: 'Montserrat', sans-serif; width: 95%; margin: 30px auto 0 auto;">
+    <p style="font-size: 15px; font-weight: bold; color: #223a66; text-align: center; margin-bottom: 16px;">
+    FÖRDERUNG – VERFAHRENSSCHRITTE
+    </p>
+    <p>
+        <img src="https://i.imgur.com/1hHyQBC.png" alt="Förderung Weg Grafik" style="width: 100%; max-width: 800px; display: block; margin: auto; margin-top: -10px; margin-bottom: -20px;">
+    </p>
+</div>
+
+
+<!-- 3 BLOCK -->
+
+<!-- Content with translucent white box -->
+<div style="margin-top: 20px;">
+    <div style="width: 100%; margin: auto;">
+        <div style="background: rgba(255, 255, 255, 0.1); border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
+            <p style="font-size: 18px; color: #223a66; letter-spacing: 1px; margin-bottom: 6px; font-weight: normal; font-family: 'Montserrat', sans-serif;">
+                Bearbeitungsgebühr: 139 € – <span style="font-weight: bold; font-family: 'Montserrat', sans-serif;">derzeit kostenfrei</span>
+            </p>
+            <div style="height: 4px; width: 75px; background-color: #5d792b; margin-bottom: 14px; margin-left: 25px;">
+            </div>
+            <p style="font-size: 16px; margin-bottom: 20px; color: #323030cd; font-family: 'Montserrat', sans-serif;">
+                Bearbeitung derzeit kostenfrei verfügbar.
+                <br><br>
+                Bewertung basiert auf Gebäudetyp, Baujahr und Heizungsart – durchgeführt von zertifizierten Energieberatern.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<!-- 4 BLOCK (WIZARD FORM) | SENT CODE FOR EACH QUESTION SEPARATELY -->
+
+
+
+
+<!-- 5 BLOCK -->
+
+
+<!-- Expert Block -->
+<div style="font-family: 'Montserrat', sans-serif; display: flex; flex-direction: column; align-items: center; gap: 0px; max-width: 800px; margin: auto; padding: 20px; box-sizing: border-box; position: relative;">
+    <!-- Expert Image with Badge -->
+    <div style="position: relative;">
+        <img src="https://www.ee-experten.com/media/bannerright-1440/jonas-pischner-clipped.png" alt="Jonas Pischner" style="width: 160px; height: auto; object-fit: contain; margin-bottom: -26px;"><img src="https://i.imgur.com/fgiZPag.png" alt="Badge" style="position: absolute; bottom: -20px; left: -20px; transform: scale(0.8); transform-origin: top left;">
+    </div>
+    <!-- Badges -->
+    <div style="display: flex; flex-direction: column; gap: 10px; width: 100%; align-items: center; margin-top: -16px;">
+        <!-- Badge 1 -->
+        <div style="background: #f2f2f2; border-radius: 40px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); display: flex; align-items: center; justify-content: flex-start; font-size: 17px; color: #223a66; white-space: nowrap; width: 350px; height: 50px; padding: 0 20px;">
+            <div style="display: flex; align-items: center; gap: 6px; margin-left: 10px;">
+                <img src="https://i.imgur.com/KCuYs6m.png" alt="check" style="width: 28px; height: 28px; object-fit: contain; transform: translateX(-6px);">
+                Zertifiziert: KfW, BAFA & dena
+            </div>
+        </div>
+        <!-- Badge 2 -->
+        <div style="background: #f2f2f2; border-radius: 40px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); display: flex; align-items: center; justify-content: flex-start; font-size: 17px; color: #223a66; white-space: nowrap; width: 350px; height: 50px; padding: 0 20px;">
+            <div style="display: flex; align-items: center; gap: 6px; margin-left: 10px;">
+                <img src="https://i.imgur.com/KCuYs6m.png" alt="check" style="width: 28px; height: 28px; object-fit: contain; transform: translateX(-6px);">
+                Bundesweite Expertenliste
+            </div>
+        </div>
+        <!-- Badge 3 -->
+        <div style="background: #f2f2f2; border-radius: 40px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); display: flex; align-items: center; justify-content: flex-start; font-size: 17px; color: #223a66; white-space: nowrap; width: 350px; height: 50px; padding: 0 20px; margin-bottom: -20px;">
+            <div style="display: flex; align-items: center; gap: 6px; margin-left: 10px;">
+                <img src="https://i.imgur.com/KCuYs6m.png" alt="check" style="width: 28px; height: 28px; object-fit: contain; transform: translateX(-6px);">
+                Staatliche Zuschüsse garantiert
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- 6 BLOCK -->
+
+
+
+<!-- GIF Stats Section -->
+<div style="font-family: 'Montserrat', sans-serif; display: flex; justify-content: center; gap: 40px; padding: 20px 20px 40px 20px; box-sizing: border-box; text-align: center; flex-wrap: wrap; margin-top: -10px;">
+    <!-- Clients Served -->
+    <div>
+        <img src="https://i.imgur.com/IsYMlvR.gif" alt="Clients Served" style="width: 90px; display: block; padding-left: 55px; margin-bottom: -6px;">
+        <p style="color: #223a66; font-size: 22px; font-weight: bold;">
+            Kunden betreut
+        </p>
+    </div>
+    <!-- Years of Experience -->
+    <div>
+        <img src="https://i.imgur.com/IsYMlvR.gif" alt="Years of Experience" style="width: 90px; display: block; padding-left: 55px; margin-bottom: -6px;">
+        <p style="color: #223a66; font-size: 22px; font-weight: bold;">
+            Jahre Erfahrung
+        </p>
+    </div>
+    <!-- Funding Raised -->
+    <div>
+        <img src="https://i.imgur.com/IsYMlvR.gif" alt="Förderung Raised" style="width: 90px; display: block; padding-left: 55px; margin-bottom: -6px;">
+        <p style="color: #223a66; font-size: 22px; font-weight: bold;">
+            Förderungssumme gesichert
+        </p>
+    </div>
+</div>
+
+
+
+
+<!-- 7 BLOCK -->
+
+
+<!-- First Testimonial Block -->
+<div style="background: #ffffff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 24px 0 16px 0; max-width: 900px; margin: 0 auto 12px auto; font-family: 'Montserrat', sans-serif;">
+    <!-- Title -->
+    <div style="text-align: center; margin-bottom: 20px;">
+        <span style="font-weight: bold; font-size: 18px; color: #223a66;">Kundenstimme: Steffen Walters</span>
+    </div>
+    <!-- Video -->
+    <div style="text-align: center; margin-bottom: 32px;">
+        <figure>
+            <div class="embed-content">
+                <iframe src="https://player.vimeo.com/video/896144572" style="width: 100%; max-width: 320px; aspect-ratio: 16/9; border-radius: 4px; border: none;" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
+            </div>
+        </figure>
+    </div>
+    <!-- Quote + Stars -->
+    <div style="position: relative; max-width: 95vw; width: 400px; margin: 0 auto; left: -20px; min-height: 80px;">
+        <p style="font-size: 13px; color: #777; font-style: italic; margin: 0; line-height: 1.5; padding: 0 40px 38px 40px; text-align: center;">
+      „Ich hatte das Gefühl, dass es sehr ehrlich war<br> 
+      und keine Verkaufsshow.“
+        </p>
+        <div style="position: absolute; bottom: -2px; left: 256px;">
+            <img src="https://i.imgur.com/dGqQTKT.png" style="height: 20px !important; width: auto !important; display: block;" alt="Bewertung Sterne">
+        </div>
+    </div>
+    <!-- Button -->
+    <div onclick="document.getElementById('form-block').scrollIntoView({ behavior: 'smooth', block: 'center' });" class="form-button">
+    Prüfung starten
+    </div>
+</div>
+<!-- Second Testimonial Block -->
+<div style="background: #ffffff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 24px 0 16px 0; max-width: 900px; margin: 0 auto 40px auto; font-family: 'Montserrat', sans-serif;">
+    <!-- Title -->
+    <div style="text-align: center; margin-bottom: 20px;">
+        <span style="font-weight: bold; font-size: 18px; color: #223a66;">Stefan Braun aus München</span>
+    </div>
+    <!-- Video -->
+    <div style="text-align: center; margin-bottom: 32px;">
+        <figure>
+            <div class="embed-content">
+                <iframe src="https://player.vimeo.com/video/896144694" style="width: 100%; max-width: 320px; aspect-ratio: 16/9; border-radius: 4px; border: none;" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
+            </div>
+        </figure>
+    </div>
+    <!-- Quote + Stars -->
+    <div style="position: relative; max-width: 95vw; width: 400px; margin: 0 auto; left: -20px; min-height: 80px;">
+        <p style="font-size: 13px; color: #777; font-style: italic; margin: 0; line-height: 1.5; padding: 0 40px 38px 40px; text-align: center;">
+      „Wir fühlen uns gut aufgehoben und wir können wirklich positiv in die Zukunft schauen.“
+        </p>
+        <div style="position: absolute; bottom: 0; left: 256px;">
+            <img src="https://i.imgur.com/dGqQTKT.png" style="height: 20px !important; width: auto !important; display: block;" alt="Bewertung Sterne">
+        </div>
+    </div>
+    <!-- Button -->
+    <div onclick="document.getElementById('form-block').scrollIntoView({ behavior: 'smooth', block: 'center' });" class="form-button">
+    Prüfung starten
+    </div>
+</div>
+
+
+
+<!-- 8 BLOCK -->
+
+
+<!-- Original White Block -->
+<div style="font-family: 'Montserrat', sans-serif;">
+    <div style="width: 100%; margin: auto;">
+        <div style="background: rgba(255, 255, 255, 0.1); border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
+            <p style="font-size: 18px; font-weight: normal; letter-spacing: 1px; margin-bottom: 6px; color: #223a66;">
+            Fördermittel – <b>aktuelle rechtliche Lage</b>
+            </p>
+            <div style="height: 4px; width: 75px; background-color: #5d792b; margin-bottom: 14px; margin-left: 25px;">
+            </div>
+            <p style="font-size: 16px; margin-bottom: 20px; color: #323030cd;">
+            Die Verfügbarkeit staatlicher Förderungen (BAFA/KfW) ist kontingentiert und unterliegt laufenden Verfahrensänderungen.
+            </p>
+            <details style="margin: 0 0 10px 25px;"><summary style="font-size: 14px; font-weight: bold; cursor: pointer; color: #323030cd;">Beispiel KfW 55 (2022/2023)</summary>
+            <p style="font-size: 14px; margin-top: 6px; color: #323030cd;">
+            Die Förderung für KfW-Effizienzhaus 55 wurde plötzlich gestoppt – tausende Bauherren gingen leer aus. Es gab keine Übergangsfristen. (BMWK-Meldung vom 24.01.2022)
+            </p>
+            </details><details style="margin: 0 0 10px 25px;"><summary style="font-size: 14px; font-weight: bold; cursor: pointer; color: #323030cd;">Aktuelle Entwicklung (2025)</summary>
+            <p style="font-size: 14px; margin-top: 6px; color: #323030cd;">
+            Zum Jahresbeginn 2025 wurde die Basisförderung für Wärmepumpen bereits von 40 % auf 30 % reduziert – ohne zusätzliche Bonuszuschüsse, die früher verfügbar waren. (KfW-Merkblatt 600 000 5131, Stand 12/2024, Programm BEG EM / KfW 458).
+            </p>
+            </details><details style="margin: 0 0 0 25px;"><summary style="font-size: 14px; font-weight: bold; cursor: pointer; color: #323030cd;">Weitere Kürzungen erwartet</summary>
+            <p style="font-size: 14px; margin-top: 6px; color: #323030cd;">
+            Es ist davon auszugehen, dass auch andere Förderprogramme in den kommenden Monaten weiter angepasst oder zeitweise ausgesetzt werden – vor allem bei hoher Nachfrage oder Haushaltskürzungen.
+            </p>
+            </details>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- 9 BLOCK -->
+
+
+<!-- Content with translucent white box -->
+<div style="font-family: 'Montserrat', sans-serif; margin: auto;">
+    <div style="width: 100%; margin-top: 20px;">
+        <div style="background: rgba(255, 255, 255, 0.1); border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px;">
+            <p style="font-size: 18px; color: #223a66; letter-spacing: 1px; margin-bottom: 6px; font-weight: normal;">
+                Förderzulassung – Begriff und praktischer Zweck
+            </p>
+            <div style="height: 4px; width: 75px; background-color: #5d792b; margin-bottom: 14px; margin-left: 25px;">
+            </div>
+            <p style="font-size: 16px; margin-bottom: 20px; color: #323030cd;">
+                Die Förderzulassung bestätigt, ob ein Gebäude förderfähig ist.
+                <br><br>
+                Diese Bestätigung erleichtert die Planung und Vorbereitung möglicher Förderanträge.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<!-- 10 BLOCK -->
+
+
+<!-- Fördermöglichkeiten Block – Redaxo Textmodul kompatibel -->
+<div style="font-family: 'Montserrat', sans-serif; margin: 60px 0 30px 0;">
+  <!-- Title -->
+  <div style="font-size: 16px; font-weight: bold; color: #223a66; text-transform: uppercase; text-align: center; max-width: 370px; margin: 20px auto 16px auto;">
+    FÖRDERHÖHEN NACH MAßNAHMENTYP  </div>
+
+  <style>
+    .förder-box {
+      background: #F2F2F2;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      display: flex;
+      align-items: center;
+      padding: 12px 18px;
+      gap: 14px;
+      transition: none;
+      cursor: default;
+    }
+
+    .förder-box:hover {
+      transform: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .form-button {
+      background: #749934;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 18px;
+      width: 300px;
+      height: 40px;
+      margin-top: 10px;
+      margin-left: 25px;
+      cursor: pointer;
+      transition: transform 0.05s ease-in-out;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+      touch-action: manipulation;
+    }
+
+    .form-button:hover {
+      transform: none;
+    }
+
+    .form-button:active {
+      transform: scale(0.96);
+    }
+  </style>
+
+  <!-- Container -->
+  <div style="display: flex; flex-direction: column; gap: 10px; max-width: 370px; margin: 0 auto;">
+    <!-- Items -->
+    <div class="förder-box">
+      <span style="display: inline-block; width: 44px; height: 44px;"><img src="https://i.imgur.com/lVi80Kz.png" alt="Solarthermie-Heizung" style="width: 100%; height: 100%; object-fit: contain; position: relative; top: -16px;"></span>
+      <div>
+        <div style="font-weight: bold; font-size: 15px; color: #111;">Solarthermie-Heizung</div>
+        <div style="color: #5d792b; font-weight: bold; font-size: 16px;">bis zu 70% Förderung</div>
+      </div>
+    </div>
+
+    <div class="förder-box">
+      <span style="display: inline-block; width: 44px; height: 44px;"><img src="https://i.imgur.com/5nWw4AH.png" alt="Biomasseheizung" style="width: 100%; height: 100%; object-fit: contain; position: relative; top: -16px;"></span>
+      <div>
+        <div style="font-weight: bold; font-size: 15px; color: #111;">Biomasseheizung</div>
+        <div style="color: #5d792b; font-weight: bold; font-size: 16px;">bis zu 70% Förderung</div>
+      </div>
+    </div>
+
+    <div class="förder-box">
+      <span style="display: inline-block; width: 44px; height: 44px;"><img src="https://i.imgur.com/3FOF7kE.png" alt="Wärmepumpe" style="width: 100%; height: 100%; object-fit: contain; position: relative; top: -16px; left: 2px;"></span>
+      <div>
+        <div style="font-weight: bold; font-size: 15px; color: #111;">Wärmepumpe (Heizung)</div>
+        <div style="color: #5d792b; font-weight: bold; font-size: 16px;">bis zu 70% Förderung</div>
+      </div>
+    </div>
+
+    <div class="förder-box">
+      <span style="display: inline-block; width: 44px; height: 44px;"><img src="https://i.imgur.com/uIfX6q7.png" alt="Fassadendämmung" style="width: 100%; height: 100%; object-fit: contain; position: relative; top: -16px; left: 2px;"></span>
+      <div>
+        <div style="font-weight: bold; font-size: 15px; color: #111;">Fassadendämmung</div>
+        <div style="color: #5d792b; font-weight: bold; font-size: 16px;">bis zu 20% Förderung</div>
+      </div>
+    </div>
+
+    <div class="förder-box">
+      <span style="display: inline-block; width: 42px; height: 42px;"><img src="https://i.imgur.com/FXCO7f8.png" alt="Fenster austauschen" style="width: 90%; height: 90%; object-fit: contain; position: relative; top: -16px; left: 5px;"></span>
+      <div>
+        <div style="font-weight: bold; font-size: 15px; color: #111;">Fenster austauschen</div>
+        <div style="color: #5d792b; font-weight: bold; font-size: 16px;">bis zu 20% Förderung</div>
+      </div>
+    </div>
+
+    <div class="förder-box">
+      <span style="display: inline-block; width: 44px; height: 44px;"><img src="https://i.imgur.com/uiAGrCc.png" alt="Dach dämmen" style="width: 100%; height: 100%; object-fit: contain; position: relative; top: -16px; left: 2px;"></span>
+      <div>
+        <div style="font-weight: bold; font-size: 15px; color: #111;">Dach dämmen</div>
+        <div style="color: #5d792b; font-weight: bold; font-size: 16px;">bis zu 20% Förderung</div>
+      </div>
+    </div>
+
+    <div class="förder-box">
+      <span style="display: inline-block; width: 44px; height: 44px;"><img src="https://i.imgur.com/AUmZ2xC.png" alt="Kellerdeckendämmung" style="width: 90%; height: 90%; object-fit: contain; position: relative; top: -16px; left: 1px;"></span>
+      <div>
+        <div style="font-weight: bold; font-size: 15px; color: #111;">Kellerdeckendämmung</div>
+        <div style="color: #5d792b; font-weight: bold; font-size: 16px;">bis zu 20% Förderung</div>
+      </div>
+    </div>
+
+    <div class="förder-box">
+      <span style="display: inline-block; width: 44px; height: 44px;"><img src="https://i.imgur.com/y5Q9MgC.png" alt="Oberste Geschossdecke dämmen" style="width: 95%; height: 95%; object-fit: contain; position: relative; top: -16px; left: 3px;"></span>
+      <div>
+        <div style="font-weight: bold; font-size: 15px; color: #111;">Oberste Geschossdecke dämmen</div>
+        <div style="color: #5d792b; font-weight: bold; font-size: 16px;">bis zu 20% Förderung</div>
+      </div>
+    </div>
+
+    <div class="förder-box">
+      <span style="display: inline-block; width: 44px; height: 44px;"><img src="https://i.imgur.com/WLsPS0x.png" alt="Sonnenschutz (Fenster)" style="width: 95%; height: 95%; object-fit: contain; position: relative; top: -16px; left: 2px;"></span>
+      <div>
+        <div style="font-weight: bold; font-size: 15px; color: #111;">Sonnenschutz (Fenster)</div>
+        <div style="color: #5d792b; font-weight: bold; font-size: 16px;">bis zu 20% Förderung</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Green Button (Scroll to Form) -->
+<div onclick="document.getElementById('form-block').scrollIntoView({ behavior: 'smooth', block: 'center' });" class="form-button">
+  Berechtigung prüfen
+</div>
+
+
+
+
+<!-- 11 BLOCK -->
+
+
+<!-- FAQ Section -->
+<div style="font-family: 'Montserrat', sans-serif; padding: 20px; max-width: 700px; margin-top: 20px;">
+    <h2 style="font-weight: bold; font-size: 17px; color: #223a66; margin-bottom: 16px; text-align: center; margin-top: 20px;">
+    HÄUFIG GESTELLTE FRAGEN (FAQ)
+    </h2>
+    <div style="display: flex; flex-direction: column; gap: 14px;">
+        <details style="background: rgba(255,255,255,0.1); border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); padding: 16px;"><summary style="font-weight: bold; font-size: 14px; cursor: pointer; color: black;">Warum ist das Dokument derzeit kostenlos erhältlich?</summary>
+        <p style="font-size: 14px; color: #323030cd; margin-top: 10px;">
+        Aktuell wird das Dokument im Rahmen einer befristeten Unterstützungsaktion ohne Berechnung bereitgestellt. Ziel ist es, förderinteressierten Haushalten einen vereinfachten Zugang zur Erstbewertung zu ermöglichen – ohne Hürden oder Verpflichtungen.
+        </p>
+        </details><details style="background: rgba(255,255,255,0.1); border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); padding: 16px;"><summary style="font-weight: bold; font-size: 14px; cursor: pointer; color: black;">Verpflichte ich mich zu etwas, wenn ich das Dokument anfordere?</summary>
+        <p style="font-size: 14px; color: #323030cd; margin-top: 10px;">
+        Nein. Die Erstellung und Zustellung des Dokuments ist unverbindlich und kostenlos. Es entstehen keine Pflichten oder Folgekosten. Gleichzeitig stellt dieses Dokument jedoch einen wichtigen ersten Schritt dar, um die Förderfähigkeit Ihres Gebäudes nachvollziehbar zu dokumentieren und den Weg zur Beantragung zu erleichtern.
+        </p>
+        </details><details style="background: rgba(255,255,255,0.1); border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); padding: 16px;"><summary style="font-weight: bold; font-size: 14px; cursor: pointer; color: black;">Muss ich etwas beantragen, wenn ich dieses Dokument erhalte?</summary>
+        <p style="font-size: 14px; color: #323030cd; margin-top: 10px;">
+        Nein. Das Dokument dient als erste Orientierung und ist unverbindlich. Es ersetzt keine Antragstellung, sondern erleichtert den weiteren Prozess der Fördermittelbeantragung.
+        </p>
+        </details><details style="background: rgba(255,255,255,0.1); border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); padding: 16px;"><summary style="font-weight: bold; font-size: 14px; cursor: pointer; color: black;">Was passiert mit meinen Daten?</summary>
+        <p style="font-size: 14px; color: #323030cd; margin-top: 10px;">
+        Ihre Angaben werden ausschließlich zur Erstellung und Zustellung des Förderdokuments verwendet. Wir speichern keine sensiblen Informationen dauerhaft und geben keine Daten an Dritte weiter. Die Verarbeitung erfolgt gemäß DSGVO.
+        </p>
+        </details><details style="background: rgba(255,255,255,0.1); border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); padding: 16px;"><summary style="font-weight: bold; font-size: 14px; cursor: pointer; color: black;">Welche Informationen muss ich für die Erstellung angeben?</summary>
+        <p style="font-size: 14px; color: #323030cd; margin-top: 10px;">
+        Um eine individuelle Bewertung zu erhalten, benötigen wir grundlegende Angaben zum Gebäude (z. B. Baujahr, Nutzung, Heizsystem) sowie Ihre Kontaktdaten für die Zustellung und zur Bestätigung der Registriernummer.
+        </p>
+        </details><details style="background: rgba(255,255,255,0.1); border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); padding: 16px;"><summary style="font-weight: bold; font-size: 14px; cursor: pointer; color: black;">Ist dieses Dokument ausreichend für einen Förderantrag?</summary>
+        <p style="font-size: 14px; color: #323030cd; margin-top: 10px;">
+        Dieses Dokument ersetzt keine offizielle Energieberatung, dient jedoch als fundierte Ersteinschätzung Ihrer Förderfähigkeit und als wertvolle Vorbereitung für die nächsten Schritte. Es zeigt auf, ob Ihr Gebäude grundsätzlich förderfähig ist – und stellt damit einen sinnvollen ersten Schritt im weiteren Antragsprozess dar. Eine offizielle Energieberatung nach BAFA-Richtlinien ist für den eigentlichen Antrag dennoch erforderlich.
+        </p>
+        </details><details style="background: rgba(255,255,255,0.1); border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); padding: 16px;"><summary style="font-weight: bold; font-size: 14px; cursor: pointer; color: black;">Ist das Ausfüllen des Formulars kompliziert oder zeitaufwendig?</summary>
+        <p style="font-size: 14px; color: #323030cd; margin-top: 10px;">
+        Das Formular ist bewusst einfach gehalten und führt Schritt für Schritt durch die notwendigen Angaben. In der Regel dauert das Ausfüllen etwa eine Minute.
+        </p>
+        </details><details style="background: rgba(255,255,255,0.1); border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); padding: 16px;"><summary style="font-weight: bold; font-size: 14px; cursor: pointer; color: black;">Ist dieses Dokument wirklich offiziell anerkannt?</summary>
+        <p style="font-size: 14px; color: #323030cd; margin-top: 10px;">
+        Das Dokument orientiert sich an den aktuellen Vorgaben des Gebäudeenergiegesetzes (GEG), der Bundesförderung für effiziente Gebäude (BEG). Es bietet eine seriöse erste Einschätzung Ihrer Förderfähigkeit.
+        </p>
+        </details>
+    </div>
+</div>
+
+
+<!-- 12 BLOCK -->
+
+
+
+<!-- Dry Official Info Block with soft white shadow box -->
+<div style="margin-top: 10px;">
+    <div style="width: 100%; margin: auto;">
+        <p style="font-size: 13px; line-height: 1.6; color: #323030cd; font-family: 'Montserrat', sans-serif; text-align: left; margin-bottom: 10px;">
+        Dieses Dokument wurde unter Bezugnahme auf die geltenden Bestimmungen des Gebäudeenergiegesetzes (GEG), der BEG-Richtlinien (BEG EM / BEG WG) sowie der Norm DIN V 18599 erstellt. Es stellt eine indikative und nicht-bindende Vorprüfung zur potenziellen Förderfähigkeit von Sanierungsvorhaben dar und kann Energieberatern im Rahmen weiterer Schritte vorgelegt werden. Die Grundlage der Berechnung basiert auf vereinfachten Standardannahmen und öffentlich zugänglichen Primärdaten unter Einhaltung des § 60 GEG.
+        </p>
+        <p style="font-size: 12px; color: #323030cd; font-family: 'Montserrat', sans-serif; text-align: left; margin-top: 10px; border-top: 1px solid #ccc; padding-top: 8px;">
+        Rechtlicher Hinweis: Dieses Dokument ersetzt keine individuelle Energieberatung nach BEG-Vorgaben und begründet keinen Anspruch auf eine Förderung. Es dient ausschließlich als Vorabinformation im Rahmen einer allgemeinen Energieeffizienzanalyse.
+        </p>
+    </div>
+</div>
