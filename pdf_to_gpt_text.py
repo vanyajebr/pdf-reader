@@ -1,19 +1,55 @@
 import streamlit as st
-import pdfplumber
 import io
 from typing import List, Dict, Tuple
+
+import pdfplumber  # still used optionally if there is a text layer
+from pdf2image import convert_from_bytes
+import pytesseract
+from PIL import Image
 
 
 def extract_text_from_pdf(file_bytes: bytes) -> str:
     """
-    Extract plain text from a PDF file given as bytes.
+    Extract text from a PDF file given as bytes.
+
+    Strategy:
+    1) Try pdfplumber (text layer).
+    2) If almost nothing is returned, fall back to OCR:
+       - convert pages to images with pdf2image
+       - run pytesseract on each page.
     """
+    # First attempt: pdfplumber text extraction
     text_chunks: List[str] = []
-    with pdfplumber.open(io.BytesIO(file_bytes)) as pdf:
-        for page in pdf.pages:
-            page_text = page.extract_text() or ""
-            text_chunks.append(page_text)
-    return "\n".join(text_chunks)
+    try:
+        with pdfplumber.open(io.BytesIO(file_bytes)) as pdf:
+            for page in pdf.pages:
+                page_text = page.extract_text() or ""
+                if page_text.strip():
+                    text_chunks.append(page_text)
+    except Exception as e:
+        # If pdfplumber fails completely, just log in Streamlit later
+        text_chunks = []
+
+    text_from_text_layer = "\n".join(text_chunks).strip()
+
+    # If we got a reasonable amount of text, use it
+    if len(text_from_text_layer) > 50:
+        return text_from_text_layer
+
+    # Otherwise, fall back to OCR
+    ocr_chunks: List[str] = []
+    try:
+        images = convert_from_bytes(file_bytes)
+        for img in images:
+            if not isinstance(img, Image.Image):
+                img = img.convert("RGB")
+            ocr_text = pytesseract.image_to_string(img) or ""
+            ocr_chunks.append(ocr_text)
+    except Exception as e:
+        # If OCR fails, return whatever we have (likely empty)
+        return text_from_text_layer or ""
+
+    return "\n".join(ocr_chunks)
 
 
 def parse_filename(filename: str) -> Tuple[str, str, str]:
@@ -69,7 +105,6 @@ def main():
         return
 
     if st.button("Generate structured text for ChatGPT 4o mini"):
-        # Collect docs grouped by type and label
         client_id_global = ""
         docs: List[Dict] = []
 
@@ -116,16 +151,13 @@ def main():
         structured_blocks: List[str] = []
         structured_blocks.append(f"CLIENT_ID: {client_id_global}\n")
 
-        # Payslips and statements separated, sorted by label for readability
         payslips = [d for d in docs if d["doc_type"] == "payslip"]
         statements = [d for d in docs if d["doc_type"] == "statement"]
         others = [d for d in docs if d["doc_type"] not in ("payslip", "statement")]
 
-        # Sort by label (so months are in order)
         payslips.sort(key=lambda x: x["label"])
         statements.sort(key=lambda x: x["label"])
 
-        # Number them PS1, PS2, BS1, BS2, etc.
         for idx, d in enumerate(payslips, start=1):
             block = (
                 f"\n\n[PAYSLIP {idx} – LABEL: {d['label']} – FILE: {d['filename']}]\n"
@@ -153,15 +185,15 @@ def main():
         st.markdown(
             """
             Copy the text below into ChatGPT 4o mini (or your Zapier AI step)
-            as the **input text**.  
-            You can then give it instructions like:  
-            “For each month, match payslip net pay to statement salary deposit, find
-            other income and commitments, and summarise issues for Vikki.”
+            as the **input text**.
+
+            Then use your preliminary check instructions, for example:
+            “For each month, match payslip net pay to statement salary deposit,
+            find other income and commitments, and summarise issues for Vikki.”
             """
         )
         st.text_area("GPT_input_text", final_text, height=400)
 
-        # Optional: download as .txt file
         st.download_button(
             label="Download structured text as .txt",
             data=final_text.encode("utf-8"),
